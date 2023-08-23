@@ -1,0 +1,16 @@
+name: NiceChat-plugin
+version: '${version}'
+main: com.github.tritricera.test.server.Server_plugin
+api-version: '1.17'
+load: STARTUP
+
+commands:
+  nice:
+    aliases: [ nc, nice ]
+    description: "can chat"
+    permission: server.nice.plugin
+    permission-message: "you don't have permissions"
+permissions:
+  server.nice.plugin:
+    default: true
+
